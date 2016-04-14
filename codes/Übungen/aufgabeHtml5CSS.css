@@ -1,0 +1,23 @@
+
+body {
+  background-color:lightgray;
+  text-align:center;
+}
+h1 {color:red;}
+
+a {
+  text-decoration:none;
+}
+
+nav>a {
+  color:blue;
+  border:2px solid red;
+  padding:5px;
+  border-radius:3px;
+}
+main {
+  margin-top:20px;
+}
+section {background-color:yellow;}
+
+section>font {color: black; size:16pt;}
