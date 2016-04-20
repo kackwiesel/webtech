@@ -21,11 +21,13 @@ body{
 header{
   position: fixed;
   width: 100%;
+  height: 21%;
+  background-color: white;
 }
 nav{
   position: fixed;
   width:100%;
-  height: 4%;
+  height: 6%;
   margin-top: 10%;
   background-color: #d32f2f;
   font-size: 1.8rem;
@@ -75,6 +77,7 @@ a:visited{
 }
 
 aside>div{
+  margin-top: 2%;
   margin-left: 1%;
 }
 li{
