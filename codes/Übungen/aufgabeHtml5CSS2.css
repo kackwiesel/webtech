@@ -1,5 +1,9 @@
 html{
-  overflow:scroll;
+  box-sizing: border-box;
+}
+*{
+  paddng:0;
+  margin:0;
 }
 body{
   background-color: white;
@@ -7,7 +11,6 @@ body{
   text-align: center;
   font-family: sans-serif;
 }
-
 h1{
   font-size:22pt;
   text-shadow: 5px 2px 4px grey;
@@ -18,13 +21,10 @@ h2{
 }
 nav{
   background-color: #d32f2f;
-  margin-top: 1cm;
   width:100%;
 }
 nav a{
   text-decoration: none;
-  padding: 1px;
-
 }
 a{
   color:white;
@@ -34,12 +34,9 @@ a:visited{
 }
 aside{
   background-color: #d32f2f;
-  position: absolute;
-  left:8;
   width:20%;
   height:100%;
   text-align: left;
-  padding:16px;
 }
 aside li{
   margin-left: 8px;
@@ -53,17 +50,11 @@ li{
   list-style-type: square;
 }
 main{
+  float:right;
   background-color: white;
-  position: absolute;
-  right: 0;
-  width:70%;
-  height:65%;
+  width:60%;
   font-size: 16pt;
   text-align:left;
-  margin-top: 1cm;
-  margin-left: 2cm;
-  margin-right: 1cm;
-  overflow-y:scroll;
 }
 article>h3{
   text-decoration: underline;
