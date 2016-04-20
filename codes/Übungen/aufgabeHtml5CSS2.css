@@ -1,27 +1,32 @@
-html{
-  box-sizing: border-box;
-}
 *{
-  paddng:0;
+  box-sizing: border-box;
+  padding:0;
   margin:0;
+  font-size: 62,5%;
 }
 body{
   background-color: white;
-  font-size: 18pt;
   text-align: center;
   font-family: sans-serif;
 }
-h1{
-  font-size:22pt;
+header{
+  width: 100%;
+}
+header h1{
+  margin-top: 1%;
+  margin-bottom: 2%;
+  font-size:2.2rem;
   text-shadow: 5px 2px 4px grey;
 }
-h2{
-  font-size:20pt;
+header h2{
+  font-size:2rem;
   text-decoration: underline;
 }
 nav{
-  background-color: #d32f2f;
   width:100%;
+  margin-top: 2%;
+  background-color: #d32f2f;
+  font-size: 1.8rem;
 }
 nav a{
   text-decoration: none;
@@ -33,28 +38,34 @@ a:visited{
   color:white;
 }
 aside{
-  background-color: #d32f2f;
+  float:left;
   width:20%;
   height:100%;
+  background-color: #d32f2f;
   text-align: left;
 }
-aside li{
-  margin-left: 8px;
-}
-aside>li>p>a{
-  font-size: 14pt;
-  text-decoration:none;
+aside>div{
+  margin-left: 1%;
 }
 li{
+  margin-left: 4%;
   color:white;
   list-style-type: square;
+}
+aside>div>li>p>a{
+  text-decoration:none;
+  font-size: 1.4rem;
 }
 main{
   float:right;
   background-color: white;
-  width:60%;
-  font-size: 16pt;
+  width:75%;
+  height:100%;
   text-align:left;
+  font-size: 1.6rem;
+}
+article{
+  margin-top: 1%;
 }
 article>h3{
   text-decoration: underline;
