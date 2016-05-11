@@ -1,0 +1,64 @@
+html{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+div{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+#outerLeft{
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 3px;
+  border-color: black;
+  border-style: solid;
+
+}
+
+#outerRight{
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 3px;
+  border-color: black;
+  border-style: solid;
+}
+
+#innerLeftOne{
+  clear:both;
+  background-color: red;
+}
+#innerLeftTwo{
+  clear:both;
+  background-color: yellow;
+}
+#innerLeftThree{
+  clear:both;
+  background-color: lime;
+}
+#innerLeftFour{
+  clear:both;
+  background-color: aqua;
+}
+#innerRightOne{
+  clear: both;
+  background-color: red;
+}
+#innerRightTwo{
+  clear:both;
+  background-color: yellow;
+}
+#innerRightThree{
+  clear:both;
+  background-color: lime;
+}
+#innerRightFour{
+  clear:both;
+  background-color: aqua;
+}
