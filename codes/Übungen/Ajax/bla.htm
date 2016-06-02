@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="de">
+   <head>
+      <meta charset="UTF-8">
+      <title>Mein Titel</title>
+
+
+   </head>
+   <body>
+    <div id="zuErsetzen"><h1>Hier steht ein Text</h1></div>
+    <input name="ButtonGo" onclick="change()" type="button" value="Go">
+
+
+   </body>
+   <script>
+     function change() {
+       var xhttp = new XMLHttpRequest();
+       xhttp.onreadystatechange = function(){
+         if(xhttp.readyState == 4 && xhttp.status == 200){
+           document.getElementById("zuErsetzen").innerHTML=xhttp.responseText;
+         }
+       };
+       xhttp.open("GET", "bla.txt.txt", true);
+       xhttp.send();
+
+   }
+   </script>
+</html>
