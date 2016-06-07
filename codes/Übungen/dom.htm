@@ -10,6 +10,7 @@
         <div id="einDiv">Ein div-Element</div>
         <p id="test">Ein<a id="link" href="http://www.google.de"> test</a> Absatz</p>
         <h1 id="U1" class="wichtig">Eine Überschrift mit id- und class-Attribut</h1>
+        <h2>Test</h2>
     </div>
 
     <!-- Unter dieser Zeile wird der DOM-Baum angezeigt -->
@@ -21,6 +22,8 @@
     var tabulationWhite = "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"; // '/t'-equivalent as unicode for html presentation
     var tabulationLine = "──────"; // '/t'-equivalent as line for tree-visualization
     var branch = "└"; // identifys a child branch in the html-tree
+
+
     function walkDOM() { // root-function for walking through the dom
         walk(document.body.childNodes, 0); //body as root node. 0 because its root level
         document.body.appendChild(tree); //adding the dom-tree to the html-document
