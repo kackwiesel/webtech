@@ -59,7 +59,11 @@ nav{
 }
 nav li{
    display: inline-block;
-   width: 25%;
+   width: 24.94%;
+
+   background-color: #4B564E;
+
+   text-align: center;
 }
 
 .nav_link{
@@ -68,11 +72,13 @@ nav li{
   font-size: 26px;
   color: white;
 
-  background-color: #4B564E;
+
 }
 
 /***********************************************************************************************/
 
 .icon-hsc-square{
   color:red;
+  /*display: table-cell;
+    vertical-align: middle*/
 }
