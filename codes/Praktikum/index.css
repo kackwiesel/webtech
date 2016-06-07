@@ -57,9 +57,9 @@ nav{
 
   position: relative;
 }
-
 nav li{
    display: inline-block;
+   width: 25%;
 }
 
 .nav_link{
