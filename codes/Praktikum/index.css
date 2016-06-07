@@ -184,6 +184,8 @@ footer p{
 
 /*ende footer***************************************************************************************/
 
-.icon-hsc-square{
+span.icon-hsc-square{
   color:red;
+
+  margin-top: 5px;
 }
