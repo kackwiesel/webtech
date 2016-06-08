@@ -9,25 +9,25 @@
 }
 
 html, body{
-  height: 100%;
+  /*width:1280px;*/
+  height:100%;
+
   font-size: 62.5%;
 }
 
 /*header bereich**********************************************************************************************/
 
 header{
-  width:100%;
-  height: 33%;
   position: relative;
+  width:100%;
+  height: 30%;
+
+
 
   background-image: url(header_hintergrund.jpg);
-
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   border-bottom: 0.7em solid #D80030;
-}
-
-header img{
-  max-width: 100%;
-  height: auto;
 }
 
 /*  Namensbox im header
@@ -37,11 +37,13 @@ header img{
 #header_schriftfeld{
   display: inline;
   position: absolute;
-    right:30px;
-    bottom: 30px;
+    right:2.34375%;
+    bottom: 27.77777%;
 
-  width: 36em;
-  height: 20em;
+  width: 14.0625%;
+  height: 80px;
+
+  min-width: 150px;
 
   padding: 6px;
 
@@ -49,25 +51,24 @@ header img{
 }
 
 #header_schriftfeld_name{
- font-size: 42px;
+ font-size: 4.0em;
  text-decoration: underline;
 }
 
 #header_schriftfeld_portfolio{
-  font-size: 36px;
+  font-size: 3.6em;
 }
 /*ende header bereich*****************************************************************************/
 
 /*nav********************************************************************************************/
 
 nav{
+  position: relative;
   width: 100%;
   height: 15%;
-  position: relative;
 }
 
 .nav_link{
-
   text-decoration: none;
   font-size: 26px;
   color: white;
@@ -97,14 +98,9 @@ nav li:last-child{
 /*main*********************************************************************************************/
 
 main{
+  float:left;
   width:75%;
   height:56%;
-
-  /*position: absolute;
-    top: 44%;
-    left: 0%;*/
-
-    float:left;
 }
 
 main section{
@@ -125,10 +121,9 @@ main p{
 /*aside / blog***************************************************************************************/
 
 aside{
+  float:right;
   width:25%;
   height:56%;
-
-  float:right;
 }
 
 #aside_p{
@@ -144,10 +139,8 @@ aside{
 /*footer********************************************************************************************/
 
 footer p{
-
-  width: 100%;
-
   float: left;
+  width: 100%;
 
   border-top: 0.3em solid #D80030;
 
@@ -161,8 +154,8 @@ footer p{
 
 @media (max-width: 769px){
   nav li{
+    float: left;
     width: 100%;
-    float: none;
     /*display:block;*/
 
     border: none;
@@ -173,19 +166,16 @@ footer p{
     text-align: center;
   }
   main{
+    float:left;
     width:100%;
-
-    position: relative;
-
   }
   aside{
+    position: left;
     width: 100%;
-
-    position: relative;
   }
 }
 /*ende media querry test*************************************************************************/
 
-span.icon-hsc-square{
+.icon-hsc-square{
   color:red;
 }

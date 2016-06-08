@@ -52,6 +52,7 @@
 }
 .icon-hsc-square:before {
   content: "e";
+	vertical-align: middle;
 }
 .icon-hsc-x:before {
   content: "f";
