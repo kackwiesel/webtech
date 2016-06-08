@@ -25,6 +25,11 @@ header{
   border-bottom: 0.7em solid #D80030;
 }
 
+header img{
+  max-width: 100%;
+  height: auto;
+}
+
 /*  Namensbox im header
     box selbst ist ein div element, welches auf inline in bezug zu header gesetzt wird
     name und portfolio besitzen jeweils eigene ids zum ansprechen*/
@@ -54,12 +59,10 @@ header{
 
 /*ende header bereich*****************************************************************************/
 
-
+/*nav********************************************************************************************/
 
 nav{
   width: 100%;
-
-
   position: relative;
 }
 
@@ -70,81 +73,39 @@ nav{
   color: white;
 }
 
-/*erste Tests mit media querrys****************************************************************/
+nav ul{
+  width:100%;
+}
+nav li{
+ float:left;
+ width: 25%;
 
-/*voller bildschirm*******************************************************************/
+ border-right: 0.1px solid white;
 
-@media (min-width: 100em){
-  nav li{
-   display: inline-block;
-   width: 24.94%;
+ background-color: #4B564E;
 
-   background-color: #4B564E;
+/* padding: 8px;*/
 
-   padding: 8px;
-
-   text-align: center;
- }
- main{
-   width:75%;
-   height:56%;
-
-   /*position: absolute;
-     top: 44%;
-     left: 0%;*/
-
-     float:left;
-
- }
-
- aside{
-   width:25%;
-   height:56%;
-
-   /*position: absolute;
-     top:44%;
-     left:76%;*/
-
-     float: right;
-
-   background-color: yellow;
- }
+ text-align: center;
+}
+nav li:last-child{
+  border: none;
 }
 
-/******************************************************************************************/
-
-/*nicht voller bildschirm******************************************************************/
-
-@media (max-width: 100em){
-  nav li{
-    display:block;
-    background-color: #4B564E;
-
-    padding: 8px;
-
-    text-align: center;
-  }
-  main{
-    width:100%;
-
-    position: relative;
-
-  }
-
-  aside{
-    width: 100%;
-
-    position: relative;
-
-    background-color: yellow;
-  }
-}
-
-/************************************************************************************************/
-
-/*ende media querry test*************************************************************************/
+/**************************************************************************************************/
 
 /*main*********************************************************************************************/
+
+main{
+  width:75%;
+  height:56%;
+
+  /*position: absolute;
+    top: 44%;
+    left: 0%;*/
+
+    float:left;
+}
 
 main section{
   padding: 20px;
@@ -163,6 +124,18 @@ main p{
 
 /*aside / blog***************************************************************************************/
 
+aside{
+  width:25%;
+  height:56%;
+
+  /*position: absolute;
+    top:44%;
+    left:76%;*/
+
+    float: right;
+
+  background-color: yellow;
+}
 aside p{
   font-size: 24px;
 }
@@ -175,17 +148,47 @@ footer p{
 
   width: 100%;
 
-  position: relative;
+  float: left;
 
-  border-top: 0.7em solid #D80030;
+  border-top: 0.3em solid #D80030;
 
   font-size: 20px;
 }
 
 /*ende footer***************************************************************************************/
 
+/*erste Tests mit media querrys****************************************************************/
+/*nicht voller bildschirm******************************************************************/
+
+@media (max-width: 769px){
+  nav li{
+    width: 100%;
+    float: none;
+    /*display:block;*/
+
+    border: none;
+    background-color: #4B564E;
+
+    padding: 8px;
+
+    text-align: center;
+  }
+  main{
+    width:100%;
+
+    position: relative;
+
+  }
+  aside{
+    width: 100%;
+
+    position: relative;
+
+    background-color: yellow;
+  }
+}
+/*ende media querry test*************************************************************************/
+
 span.icon-hsc-square{
   color:red;
-
-  margin-top: 5px;
 }
