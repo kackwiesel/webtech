@@ -1,66 +1,71 @@
 <!doctype html>
 <html lang="de">
    <head>
-      <meta charset="UTF-8">
-      <title>Portfolio</title>
-      <link rel="stylesheet" href=index.css type="text/css" />
-      <link rel="stylesheet" href=icons.css type="text/css" />
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href=index.css type="text/css" />
+    <link rel="stylesheet" href=icons.css type="text/css" />
 
-      <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
- </head>
+    <script language="javascript" src="articlefunc.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+  </head>
 
+  <body>
 
-   <body>
+    <header>
+      <div id="header_schriftfeld">
+      <p id="header_schriftfeld_name">Karl Scheler</p>
+      <p id="header_schriftfeld_portfolio"><span class="icon-hsc-square"></span>PORTFOLIO</p>
+      </div>
+    </header>
 
-      <header>
-
-        <div id="header_schriftfeld">
-          <p id="header_schriftfeld_name">Karl Scheler</p>
-          <p id="header_schriftfeld_portfolio"><span class="icon-hsc-square"></span>PORTFOLIO</p>
-        </div>
-
-      </header>
+    <!--links in der navigation werden auf javascript:void(0) gesetzt, damit sie zu "nichts" zeigen
+        per onclick() event wird articlechange skript aufgerufen und es werden die ids der jeweiligen
+        an zu zeigenden artikels übergeben-->
 
       <nav>
-
-        <ul><li><a class="nav_link" href="">Über mich</a></li>
-            <li><a class="nav_link" href="">Kompetenzen</a></li>
-            <li><a class="nav_link" href="">Referenzen</a></li>
-            <li><a class="nav_link" href="">Kontakt</a></li>
+        <ul>
+          <li>
+            <a class="nav_link" href="javascript:void(0)" onclick="return change_article('about_me')">Über mich</a>
+          </li>
+          <li>
+            <a class="nav_link" href="javascript:void(0)" onclick="return change_article('kompetenzen')">Kompetenzen</a>
+          </li>
+          <li><a class="nav_link" href="">Referenzen</a></li>
+          <li><a class="nav_link" href="">Kontakt</a></li>
         </ul>
-
       </nav>
 
       <main>
+        <article id="about_me">
+          <section>
+            <h1><span class="icon-hsc-square"></span>Persönliches</h1>
+            <p>bla</p>
+            <p>bla</p>
+          </section>
 
-      <section>
+          <section>
+            <h1><span class="icon-hsc-square"></span>Karriere & Ausbildung</h1>
+            <p>bla</p>
+            <p>bla</p>
+          </section>
+        </article>
 
-        <h1 class="main_h1"><span class="icon-hsc-square"></span>Persönliches</h1>
-        <p>bla</p>
-        <p>bla</p>
-
-      </section>
-
-      <section>
-
-        <h1 class="main_h1"><span class="icon-hsc-square"></span>Karriere & Ausbildung</h1>
-        <p>bla</p>
-        <p>bla</p>
-
-      </section>
-
+        <article id="kompetenzen">
+          <section><p>Webentwicklung</p></section>
+          <section><p>Softwareentwicklung</p></section>
+          <section><p>Elektroinstallation</p></section>
+          <section><p>Netzwerktechniker</p></section>
+          <section><p>Musik</p></section>
+        </article>
       </main>
 
       <aside>
-
         <p id="aside_p">Blog</p>
-
       </aside>
 
       <footer>
-
         <p>und hier ist der footer</p>
-
       </footer>
 
    </body>

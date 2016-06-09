@@ -22,8 +22,6 @@ header{
   width:100%;
   height: 30%;
 
-
-
   background-image: url(header_hintergrund.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -81,11 +79,11 @@ nav li{
  float:left;
  width: 25%;
 
+ padding: 5px;
+
  border-right: 0.1px solid white;
 
  background-color: #4B564E;
-
-/* padding: 8px;*/
 
  text-align: center;
 }
@@ -103,18 +101,50 @@ main{
   height:56%;
 }
 
-main section{
+main article{
   padding: 20px;
+  padding-right: none;
 }
 
-.main_h1{
+/*die verschieden main inhalte, in form von articles, zu erreichen über nav**************************/
+
+#about_me{
+  display:block;
+}
+
+#about_me section{
+  padding-bottom: 10px;
+}
+
+#about_me h1{
   font-size: 26px;
   border-bottom: 0.1em solid #4B564E;
 }
 
-main p{
+#about_me p{
   font-size: 20px;
 }
+
+#kompetenzen{
+  display:none;
+}
+
+#kompetenzen section{
+  width: 75%;
+
+  padding-bottom:30px;
+}
+
+#kompetenzen section p{
+  padding:5px;
+  font-size: 24px;
+
+  color: white;
+
+  background-color: #4B564E
+
+}
+/***************************************************************************************************/
 
 /*ende main*****************************************************************************************/
 
@@ -124,6 +154,8 @@ aside{
   float:right;
   width:25%;
   height:56%;
+
+  padding-top: 20px;
 }
 
 #aside_p{
@@ -149,8 +181,8 @@ footer p{
 
 /*ende footer***************************************************************************************/
 
-/*erste Tests mit media querrys****************************************************************/
-/*nicht voller bildschirm******************************************************************/
+/*meidia querries****************************************************************/
+/*bei weniger als 769px wird nav zu hamburger menu und aside wird unter main gesetzt******************************************************************/
 
 @media (max-width: 769px){
   nav li{
