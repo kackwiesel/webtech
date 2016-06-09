@@ -165,6 +165,12 @@ aside{
 
   background-color: #4B564E
 }
+#blogtext{
+  padding: 30px;
+  border-bottom: none;
+  
+  font-size: 16px;
+}
 
 /*ende aside****************************************************************************************/
 
