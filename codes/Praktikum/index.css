@@ -49,12 +49,14 @@ header{
 }
 
 #header_schriftfeld_name{
- font-size: 4.0em;
+ font-size: 4.5em;
+ font-weight: bold;
  text-decoration: underline;
 }
 
 #header_schriftfeld_portfolio{
   font-size: 3.6em;
+  letter-spacing: 0.09em;;
 }
 /*ende header bereich*****************************************************************************/
 
@@ -106,7 +108,18 @@ main article{
   padding-right: none;
 }
 
+main article section:not(:first-child){
+  padding-top: 20px;
+}
+
+main article section div.section_wrapper{
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
 /*die verschieden main inhalte, in form von articles, zu erreichen über nav**************************/
+
+/*über mich--> data sind divs in css zu tabelle formatiert, life wird jede zweite spalte über nth-child angesprochen***/
 
 #about_me{
   display:block;
@@ -124,6 +137,30 @@ main article{
 #about_me p{
   font-size: 20px;
 }
+
+div.table {
+  display: table;
+  border-collapse:collapse;
+}
+.table p.rechte_spalte{
+  padding-left: 20px;
+}
+div.tr {
+  display:table-row;
+}
+div.td {
+  display:table-cell;
+}
+
+#life p:nth-child(2n+1){
+  font-weight: bold;
+}
+#life p:nth-child(2n){
+  padding-top: 4px;
+  padding-left: 4px;
+}
+
+/****************************************************************************************************/
 
 #kompetenzen{
   display:none;
@@ -168,7 +205,7 @@ aside{
 #blogtext{
   padding: 30px;
   border-bottom: none;
-  
+
   font-size: 16px;
 }
 
