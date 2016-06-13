@@ -49,6 +49,7 @@
 }
 .icon-hsc-hamburger:before {
   content: "b";
+	vertical-align: middle;
 }
 .icon-hsc-square:before {
   content: "e";

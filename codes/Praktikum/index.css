@@ -93,6 +93,13 @@ nav li:last-child{
   border: none;
 }
 
+/* span für hamburger icon... siehe media querry*/
+
+.hamburger_icon{
+  display: none;
+  background-color: #4B564E;
+}
+
 /**************************************************************************************************/
 
 /*main*********************************************************************************************/
@@ -100,17 +107,22 @@ nav li:last-child{
 main{
   float:left;
   width:75%;
-  height:56%;
+  min-height:56%;
 }
 
 main article{
+  display:none;
   padding: 20px;
   padding-right: none;
 }
 
+/* articles werden über padding- top mit abstand voneinander getrennt, außer der oberste*/
+
 main article section:not(:first-child){
   padding-top: 20px;
 }
+
+/* section_wrapper div trennt den inhalt der section von ihrer überschrift durch rand top und links*/
 
 main article section div.section_wrapper{
   padding-top: 20px;
@@ -162,10 +174,6 @@ div.td {
 
 /****************************************************************************************************/
 
-#kompetenzen{
-  display:none;
-}
-
 #kompetenzen section{
   width: 75%;
 
@@ -183,6 +191,14 @@ div.td {
 }
 /***************************************************************************************************/
 
+#references{
+  background-color: yellow;
+}
+
+#contact{
+  background-color: green;
+}
+
 /*ende main*****************************************************************************************/
 
 /*aside / blog***************************************************************************************/
@@ -190,7 +206,7 @@ div.td {
 aside{
   float:right;
   width:25%;
-  height:56%;
+  min-height:56%;
 
   padding-top: 20px;
 }
@@ -228,7 +244,19 @@ footer p{
 /*bei weniger als 769px wird nav zu hamburger menu und aside wird unter main gesetzt******************************************************************/
 
 @media (max-width: 769px){
+
+    /*ul wird nach umbruch auf kleinen display ausgeblendet.
+      span mit hamburger icon wird eingeblendet.
+      durch click auf icon wird hamburger() aufgrufen und hamburger- span wird auf display:none
+      und ul auf display: block gesetzt.*/
+
+  nav ul{
+    display:none;
+  }
+
   nav li{
+    /*display:none;*/
+
     float: left;
     width: 100%;
     /*display:block;*/
@@ -240,6 +268,13 @@ footer p{
 
     text-align: center;
   }
+
+  .hamburger_icon{
+    display:block;
+    text-align: right;
+    font-size: 28px;
+  }
+
   main{
     float:left;
     width:100%;
@@ -253,4 +288,7 @@ footer p{
 
 .icon-hsc-square{
   color:red;
+}
+.icon-hsc-hamburger{
+  color:white;
 }

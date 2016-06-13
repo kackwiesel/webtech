@@ -7,6 +7,7 @@
     <link rel="stylesheet" href=icons.css type="text/css" />
 
     <script language="javascript" src="articlefunc.js"></script>
+  <!--  <script language="javascript" src="hamburger.js"></script>-->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
   </head>
 
@@ -24,20 +25,32 @@
         an zu zeigenden artikels übergeben-->
 
       <nav>
-        <ul>
+
+        <!-- hamburger div zum einblenden des hamburger icons.
+            in div "vor" icon ist ein link mit onclick() event auf hamburger().
+            div wird per media querry nur bei kleinem display eingeblendet. -> siehe css-->
+            
+        <div class="hamburger_icon">
+        <a href="javascript:void(0)" onclick="hamburger()"><span class="icon-hsc-hamburger" id="hamburger"></span></a>
+        </div>
+
+        <ul id="list">
           <li>
             <a class="nav_link" href="javascript:void(0)" onclick="return change_article('about_me')">Über mich</a>
           </li>
           <li>
             <a class="nav_link" href="javascript:void(0)" onclick="return change_article('kompetenzen')">Kompetenzen</a>
           </li>
-          <li><a class="nav_link" href="">Referenzen</a></li>
-          <li><a class="nav_link" href="">Kontakt</a></li>
+          <li><a class="nav_link" href="javascript:void(0)" onclick="return change_article('references')">Refenzen</a>
+          </li>
+          <li><a class="nav_link" href="javascript:void(0)" onclick="return change_article('contact')">Kontakt</a>
+          </li>
         </ul>
       </nav>
 
       <main>
         <article id="about_me">
+
           <section id="datas">
             <h1><span class="icon-hsc-square"></span>Persönliches</h1>
             <div class="section_wrapper">
@@ -74,6 +87,13 @@
           <section><p>Netzwerktechniker</p></section>
           <section><p>Musik</p></section>
         </article>
+
+      <article id="references">
+      </article>
+
+      <article id="contact">
+      </article>
+
       </main>
 
       <aside>
