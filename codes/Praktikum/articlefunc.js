@@ -12,7 +12,6 @@ for (i=0; i<articles.length;i++){
 		articles[i].style.display = "none";
 	}
 }
-
 return true;
 }
 
