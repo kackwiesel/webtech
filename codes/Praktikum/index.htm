@@ -29,21 +29,23 @@
         <!-- hamburger div zum einblenden des hamburger icons.
             in div "vor" icon ist ein link mit onclick() event auf hamburger().
             div wird per media querry nur bei kleinem display eingeblendet. -> siehe css-->
-            
+
         <div class="hamburger_icon">
         <a href="javascript:void(0)" onclick="hamburger()"><span class="icon-hsc-hamburger" id="hamburger"></span></a>
         </div>
 
         <ul id="list">
-          <li>
-            <a class="nav_link" href="javascript:void(0)" onclick="return change_article('about_me')">Über mich</a>
+          <li id="1st" onmouseover="mouse_over('1st')" onmouseout="mouse_out('1st')">
+            <a class="nav_link" id="link1" href="javascript:void(0)" onclick="return change_article('about_me')" onmouseover="mouse_over_link('link1')" onmouseout="mouse_out_link('link1')">Über mich</a>
           </li>
-          <li>
-            <a class="nav_link" href="javascript:void(0)" onclick="return change_article('kompetenzen')">Kompetenzen</a>
+          <li id="2nd" onmouseover="mouse_over('2nd')" onmouseout="mouse_out('2nd')">
+            <a class="nav_link" id="link2" href="javascript:void(0)" onclick="return change_article('kompetenzen')" onmouseover="mouse_over_link('link2')" onmouseout="mouse_out_link('link2')">Kompetenzen</a>
           </li>
-          <li><a class="nav_link" href="javascript:void(0)" onclick="return change_article('references')">Refenzen</a>
+          <li id="3rd" onmouseover="mouse_over('3rd')" onmouseout="mouse_out('3rd')">
+            <a class="nav_link" id="link3" href="javascript:void(0)" onclick="return change_article('references')" onmouseover="mouse_over_link('link3')" onmouseout="mouse_out_link('link3')">Refenzen</a>
           </li>
-          <li><a class="nav_link" href="javascript:void(0)" onclick="return change_article('contact')">Kontakt</a>
+          <li id="4th" onmouseover="mouse_over('4th')" onmouseout="mouse_out('4th')">
+            <a class="nav_link" id="link4" href="javascript:void(0)" onclick="return change_article('contact')" onmouseover="mouse_over_link('link4')" onmouseout="mouse_out_link('link4')">Kontakt</a>
           </li>
         </ul>
       </nav>

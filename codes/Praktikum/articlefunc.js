@@ -1,3 +1,4 @@
+
 function change_article(id){
 
 //get all articles
@@ -13,6 +14,23 @@ for (i=0; i<articles.length;i++){
 }
 
 return true;
+}
+
+
+function mouse_over(id){
+	document.getElementById(id).style.backgroundColor = "#EAEBEB";
+}
+
+function mouse_out(id){
+	document.getElementById(id).style.backgroundColor = "#4B564E";
+}
+
+function mouse_over_link(id){
+	document.getElementById(id).style.color = "#4B564E";
+}
+
+function mouse_out_link(id){
+	document.getElementById(id).style.color = "white";
 }
 
 function hamburger(){
