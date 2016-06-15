@@ -108,6 +108,14 @@ nav li:last-child{
   background-color: #4B564E;
 }
 
+
+
+#cross_icon{
+  display: none;
+  background-color: #4B564E;
+}
+
+
 /**************************************************************************************************/
 
 /*main*********************************************************************************************/
@@ -251,7 +259,7 @@ footer p{
 /*meidia querries****************************************************************/
 /*bei weniger als 769px wird nav zu hamburger menu und aside wird unter main gesetzt******************************************************************/
 
-@media (max-width: 769px){
+@media all and (max-width: 769px){
 
     /*ul wird nach umbruch auf kleinen display ausgeblendet.
       span mit hamburger icon wird eingeblendet.
@@ -283,13 +291,33 @@ footer p{
     font-size: 28px;
   }
 
+  #cross_icon{
+    text-align: right;
+    font-size: 24px;
+  }
+
   main{
     float:left;
     width:100%;
+
+    padding-top: 40px;
   }
   aside{
     position: left;
     width: 100%;
+  }
+}
+
+/*display: none !important überschreibt in javascript per hamburger() auf display:block gestztes
+  cross icon --> sonst wird cross icon nach resize weiterhin angezeigt*/
+
+@media all and (min-width: 769px){
+  #list{
+    display: block !important;
+  }
+
+  #cross_icon{
+    display: none !important;
   }
 }
 /*ende media querry*************************************************************************/
@@ -298,5 +326,8 @@ footer p{
   color:red;
 }
 .icon-hsc-hamburger{
+  color:white;
+}
+.icon-hsc-x{
   color:white;
 }
